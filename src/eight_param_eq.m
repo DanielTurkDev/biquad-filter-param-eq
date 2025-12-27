@@ -1,13 +1,14 @@
 classdef eight_param_eq < handle
-    %% MUT 304 - Final Project (1 point)
-    % Name - [Daniel Turk] (1 point)
-    % Date - [12/8/2025] (1 point)
-    % Brief Description (5 points)
-    % Script contains functions to create an 8 band parametric consisting of
+    %% EIGHT_PARAM_EQ A class for parametric EQ filtering.
+    % Author: Daniel Turk (or names below)
+    % Copyright (c) 2025 Daniel Turk.
+    % Licensed under the MIT License.
+
+    % Description:
+    % functions for creating and utilizing 8 band parametric consisting of
     % biquad filter objects and to process audio buffers using it
-    %% Requires biquad_filter.m in the same folder to run
-    %% eight_param_eq returns a param eq made using the 8 provided cutoffs, gains, q factors and sampling rate
-    %% Project Code:
+    % eight_param_eq returns a param eq made using the 8 provided cutoffs, 
+    % gains, q factors and shared sampling rate
 
     properties
         % constants
@@ -15,8 +16,6 @@ classdef eight_param_eq < handle
 
         % array of filters
         filters;
-
-
     end
 
     methods
