@@ -104,7 +104,7 @@ title('Parametric EQ Impulse Frequency Response');
 xlabel('Frequency (Hz)'); ylabel('Magnitude (dB)');
 xlim([20 20000]);
 ylim([-100 -20]);
-legend('Input', 'Output (Offset)');
+legend('Input', 'Output');
 
 % Draw vertical lines at cutoff frequencies
 for k = 1:length(cutoffs)
